@@ -10,4 +10,16 @@ main {
       text-align: center;
     }
   }
+
+  .profesores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .alumnos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
