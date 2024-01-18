@@ -8,13 +8,25 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css" />
   </head>
   <body>
-    <header>
+    <header class="header-inner aos-init aos-animate">
       <img src="img/logo.png" alt="" />
       <div>
         <h1>IES MAR DE CÁDIZ</h1>
         <h2>Desarrollo de Aplicaciones Web</h2>
       </div>
     </header>
+    <script type="text/javascript">
+      $(function () {
+        var navbar = $(".header-inner");
+        $(window).scroll(function () {
+          if ($(window).scrollTop() <= 40) {
+            navbar.removeClass("navbar-scroll");
+          } else {
+            navbar.addClass("navbar-scroll");
+          }
+        });
+      });
+    </script>
     <main>
       <section class="profesores">
         <div>
