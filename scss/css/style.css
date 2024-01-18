@@ -85,11 +85,14 @@ main .alumnos div img {
   width: 100%;
   height: auto;
 }
+<<<<<<< HEAD
 main .profesores div p,
 main .alumnos div p {
   font-weight: 600;
   font-size: 18px;
 }
+=======
+>>>>>>> 762dfd0e683052c3f3fab20292158b750265dda9
 
 * {
   font-family: "Salsa", cursive;
