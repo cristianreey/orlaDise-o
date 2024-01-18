@@ -49,16 +49,25 @@ main {
 main section {
   margin-bottom: 30px;
 }
-main section div {
-  text-align: center;
-}
-main .profesores {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+main .profesores,
 main .alumnos {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+main .profesores div,
+main .alumnos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 55px 55px rgba(0, 0, 0, 0.1);
+  width: calc(20% - 20px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+main .profesores div img,
+main .alumnos div img {
+  width: 100%;
+  height: auto;
 }
