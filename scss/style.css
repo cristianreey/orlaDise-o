@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css2?family=Salsa&display=swap";
 body,
 h1,
@@ -88,21 +89,30 @@ main .alumnos div p {
 }
 main .profesores {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 main .profesores div .imagenProfesores {
   border: solid black;
   border-radius: 50%;
-  width: 50px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
+  transition: transform 0.3s ease; /* Agregamos una transición para suavizar el efecto */
+}
+main .profesores div .imagenProfesores:hover {
+  transform: scale(1.9);
+  background-color: white;
 }
 main .profesores div img {
-  width: 100%;
   height: auto;
+}
+main .profesores .decoracion-lateral {
+  width: 50%;
 }
 
 * {
   font-family: "Salsa", cursive;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
