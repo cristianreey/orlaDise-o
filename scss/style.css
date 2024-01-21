@@ -112,6 +112,11 @@ main .profesores div img {
 main .profesores .decoracion-lateral {
   width: 50%;
 }
+main .adorno2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 * {
   font-family: "Salsa", cursive;
