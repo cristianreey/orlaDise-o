@@ -43,6 +43,7 @@ main {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    gap: 10px;
 
     div {
       .imagenProfesores {
@@ -51,7 +52,7 @@ main {
         width: 150px;
         height: 150px;
         overflow: hidden;
-        transition: transform 0.3s ease; /* Agregamos una transición para suavizar el efecto */
+        transition: transform 0.3s ease;
       }
 
       .imagenProfesores:hover {
@@ -68,11 +69,23 @@ main {
       width: 50%;
     }
   }
-
-  .adorno2 {
+  .promocion {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    .adorno2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    div p {
+      font-size: 50px;
+      font-weight: 300;
+      font-style: italic;
+      color: rgb(135, 135, 135);
+    }
   }
 
   .alumnado,

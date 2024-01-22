@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 body,
 h1,
@@ -94,6 +93,7 @@ main .direccion {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  gap: 10px;
 }
 main .profesores div .imagenProfesores,
 main .direccion div .imagenProfesores {
@@ -102,7 +102,7 @@ main .direccion div .imagenProfesores {
   width: 150px;
   height: 150px;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Agregamos una transición para suavizar el efecto */
+  transition: transform 0.3s ease;
 }
 main .profesores div .imagenProfesores:hover,
 main .direccion div .imagenProfesores:hover {
@@ -117,10 +117,22 @@ main .profesores .decoracion-lateral,
 main .direccion .decoracion-lateral {
   width: 50%;
 }
-main .adorno2 {
+main .promocion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .promocion .adorno2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+main .promocion div p {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgb(135, 135, 135);
 }
 main .alumnado,
 main .directivo,
