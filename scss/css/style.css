@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Salsa&display=swap";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 body,
 h1,
 h2,
@@ -86,23 +87,53 @@ main .alumnos div p {
   font-weight: 600;
   font-size: 18px;
 }
-main .profesores {
+main .profesores,
+main .direccion {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
-main .profesores div .imagenProfesores {
+main .profesores div .imagenProfesores,
+main .direccion div .imagenProfesores {
   border: solid black;
   border-radius: 50%;
-  width: 50px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
+  transition: transform 0.3s ease; /* Agregamos una transición para suavizar el efecto */
 }
-main .profesores div img {
-  width: 100%;
+main .profesores div .imagenProfesores:hover,
+main .direccion div .imagenProfesores:hover {
+  transform: scale(1.9);
+  background-color: white;
+}
+main .profesores div img,
+main .direccion div img {
   height: auto;
+}
+main .profesores .decoracion-lateral,
+main .direccion .decoracion-lateral {
+  width: 50%;
+}
+main .adorno2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .alumnado,
+main .directivo,
+main .profesorado {
+  font-size: 35px;
+  text-align: center;
+}
+main .alumnado p,
+main .directivo p,
+main .profesorado p {
+  font-weight: 300;
 }
 
 * {
-  font-family: "Salsa", cursive;
-} /*# sourceMappingURL=style.css.map */
+  font-family: "Lato", sans-serif;
+}

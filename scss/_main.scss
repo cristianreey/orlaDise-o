@@ -36,7 +36,8 @@ main {
       }
     }
   }
-  .profesores {
+  .profesores,
+  .direccion {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -72,5 +73,18 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .alumnado,
+  .directivo,
+  .profesorado {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .alumnado p,
+  .directivo p,
+  .profesorado p {
+    font-weight: 300;
   }
 }
