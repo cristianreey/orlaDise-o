@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orla Interactiva</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+      background-image: url("img/graduation-background-p75t9oxgfv0puifh.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      margin: 0;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 80%;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #50c5ce;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2023d9;
+      color: wheat;
+      transition: background-color 0.3s;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>BIENVENIDOS A LA ORLA INTERACTIVA DEL GRADO SUPERIOR DE DESARROLLO DE APLICACIONES WEB 2022-2024</h1>
+      <a href="index1.html"><button class="btn">Comenzar</button></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORLA INTERACTIVA</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: rgb(0, 0, 0);
+      }
+
+      h1,
+      h3 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .container h3,
+      section h3 {
+        text-align: center;
+      }
+
+      section {
+        margin-top: 30px;
+      }
+
+      .profesores,
+      .alumnos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .profesores {
+        gap: 20px;
+      }
+
+      .alumnos div {
+        flex-basis: 12%;
+        margin: 10px;
+      }
+
+      .imagenProfesores,
+      .alumnos div img {
+        width: 100px;
+        height: 110px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .profesores div:hover,
+      .alumnos div:hover {
+        transform: scale(2.2);
+        background-color: white;
+      }
+
+      .imagenProfesores p {
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .decoracion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .decoracion img {
+        height: 150px;
+        width: 300px;
+      }
+
+      .logos {
+        width: 150px;
+        height: auto;
+      }
+
+      .h1 {
+        background-image: url("img/cinta-removebg-preview.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 27px;
+        color: aliceblue;
+      }
+
+      .h3 {
+        background-image: url("img/cinta-removebg-preview.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 24px;
+        color: aliceblue;
+        width: 50%;
+      }
+      @media only screen and (max-width: 600px) {
+        .profesores,
+        .alumnos {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .profesores,
+        .alumnos div {
+          flex-basis: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">PROFESORES</h1>
+      <section class="profesores">
+        <img class="logos" src="img/logo.png" alt="" />
+        <div>
+          <img class="imagenProfesores" src="gif/CRISTINACARMEN.webp" alt="" />
+          <p>
+            Carmen Ramírez<br />
+            y Cristina Sánchez
+          </p>
+        </div>
+        <div>
+          <img class="imagenProfesores" src="gif/ANTONIOPROFE.webp" alt="" />
+          <p>Antonio Luis <br />Lozano Lubián</p>
+        </div>
+        <div>
+          <img class="imagenProfesores" src="gif/PABLOPROFESOR.webp" alt="" />
+          <p>Víctor Pablo <br />Galván Florez</p>
+        </div>
+        <div>
+          <img class="imagenProfesores" src="gif/FERNANDO.webp" alt="" />
+          <p>Fernando <br />Vargas Blandino</p>
+        </div>
+        <div>
+          <img class="imagenProfesores" src="gif/RAFA.webp" alt="" />
+          <p>Rafael del Río <br />Santaella</p>
+        </div>
+        <div>
+          <img class="imagenProfesores" src="gif/ROCIO.webp" alt="" />
+          <p>María del Rocío <br />García González</p>
+        </div>
+        <div>
+          <img class="imagenProfesores" src="gif/ZENAIDA.webp" alt="" />
+          <p>
+            Zenaida González<br />
+            Caballos Martínez
+          </p>
+        </div>
+        <img class="logos" src="img/logo.png" alt="" />
+      </section>
+      <section>
+        <div class="decoracion">
+          <img src="img/decoracion1.png" alt="" />
+          <h3 class="h3">ALUMNADO</h3>
+          <img src="img/decoracion2.png" alt="" />
+        </div>
+        <div class="alumnos">
+          <div>
+            <img src="gif/ANDRES.webp" alt="" />
+            <p>Daniel <br />Andrés Comino</p>
+          </div>
+          <div>
+            <img src="gif/ANTONIO.webp" alt="" />
+            <p>Antonio Jesús <br />Batista Sánchez</p>
+          </div>
+          <div>
+            <img src="gif/BLANCAS.webp" alt="" />
+            <p>Daniel <br />Blancas Jiménez</p>
+          </div>
+          <div>
+            <img src="gif/CADENILLAS.webp" alt="" />
+            <p>Diego André <br />Cadenillas Nájar</p>
+          </div>
+          <div>
+            <img src="gif/CARABALLO.webp" alt="" />
+            <p>Álvaro <br />Caraballo García</p>
+          </div>
+          <div>
+            <img src="gif/CARABANTE.webp" alt="" />
+            <p>Álvaro <br />Carabante Rodríguez</p>
+          </div>
+          <div>
+            <img src="gif/JULIA.webp" alt="" />
+            <p>Julia <br />Carrera Gutiérrez</p>
+          </div>
+          <div>
+            <img src="gif/JUANJO.webp" alt="" />
+            <p>Juan José <br />Catalá Garrido</p>
+          </div>
+          <div>
+            <img src="gif/NATAN.webp" alt="" />
+            <p>Natán <br />Cejas García</p>
+          </div>
+          <div>
+            <img src="gif/CRESPO.webp" alt="" />
+            <p>Miguel <br />Crespo Moreno</p>
+          </div>
+          <div>
+            <img src="gif/EDUARDO.webp" alt="" />
+            <p>Eduardo <br />Daza Villanueva</p>
+          </div>
+          <div>
+            <img src="gif/RAMON.webp" alt="" />
+            <p>
+              José Ramón<br />
+              Gallardo Azcárate
+            </p>
+          </div>
+          <div>
+            <img src="gif/JOSELUIS.webp" alt="" />
+            <p>José Luis <br />Granado Mendoza</p>
+          </div>
+          <div>
+            <img src="gif/ANA.webp" alt="" />
+            <p>Ana María <br />Montes de Ory</p>
+          </div>
+          <div>
+            <img src="gif/MOISES.webp" alt="" />
+            <p>Moisés <br />Moreno Exojo</p>
+          </div>
+          <div>
+            <img src="gif/JAIME.webp" alt="" />
+            <p>Jaime <br />Pérez Brotons</p>
+          </div>
+          <div>
+            <img src="gif/ALEJANDRO.webp" alt="" />
+            <p>Alejandro <br />Raposo Tomás</p>
+          </div>
+          <div>
+            <img id="reyImage" src="gif/REY.webp" alt="Cristian Rey Balmaseda" />
+            <p>Cristian <br />Rey Balmaseda</p>
+          </div>
+          <div>
+            <img id="sanchezImage" src="gif/SANCHEZ.webp" alt="Gonzalo Sánchez de Toro López" />
+            <p>Gonzalo <br />Sánchez de Toro López</p>
+          </div>
+          <div>
+            <img src="gif/PABLO.webp" alt="" />
+            <p>Pablo <br />alladares González</p>
+          </div>
+          <div>
+            <img src="gif/JAVIER.webp" alt="" />
+            <p>Javier <br />Verano López</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Obtener todas las imágenes de los profesores
+      const profesorImages = document.querySelectorAll(".imagenProfesores");
+
+      // Obtener todas las imágenes de los alumnos
+      const alumnoImages = document.querySelectorAll(".alumnos div img");
+
+      // Función para mostrar gradualmente las imágenes de los profesores
+      function showProfesorImages() {
+        profesorImages.forEach((imagen, index) => {
+          setTimeout(() => {
+            imagen.style.opacity = 1;
+          }, 500 * index); // Incrementar el tiempo de retardo para cada imagen
+        });
+      }
+
+      // Función para mostrar gradualmente las imágenes de los alumnos
+      function showAlumnoImages() {
+        alumnoImages.forEach((imagen, index) => {
+          setTimeout(() => {
+            imagen.style.opacity = 1;
+          }, 500 * index); // Incrementar el tiempo de retardo para cada imagen
+        });
+      }
+
+      // Llamar a la función para mostrar las imágenes de los profesores después de que la página se cargue
+      window.onload = function () {
+        showProfesorImages();
+        showAlumnoImages(); // Llamar a la función para mostrar las imágenes de los alumnos
+      };
+    </script>
+  </body>
+</html>
