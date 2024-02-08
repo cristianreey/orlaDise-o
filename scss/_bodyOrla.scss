@@ -3,6 +3,7 @@ body {
   padding: 0;
   text-align: center;
   color: rgb(0, 0, 0);
+  background-color: rgb(243, 241, 241);
 }
 
 section {
@@ -20,10 +21,15 @@ section {
   gap: 20px;
 }
 
+.profesores div {
+  border-radius: 50%;
+}
+
 .alumnos div {
   flex-basis: 12%;
   margin: 10px;
   border-radius: 50%;
+  transition: 0.6s ease-in-out;
 }
 
 .imagenProfesores,
@@ -37,10 +43,31 @@ section {
 .profesores div:hover,
 .alumnos div:hover {
   transform: scale(2.2);
-  background-color: white;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+}
+.alumnos div:hover p ,
+.profesores div:hover p {
+  opacity: 70%;
 }
 
 .imagenProfesores p {
   font-size: 10px;
   text-align: center;
+}
+
+.profesores div p {
+  background-image: url("../../img/decorativaNegra.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.alumnos div p {
+  background-image: url("../../img/imageDecorativa.png");
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
 }

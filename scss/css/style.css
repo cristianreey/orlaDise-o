@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   color: rgb(0, 0, 0);
+  background-color: rgb(243, 241, 241);
 }
 
 section {
@@ -20,10 +22,15 @@ section {
   gap: 20px;
 }
 
+.profesores div {
+  border-radius: 50%;
+}
+
 .alumnos div {
   flex-basis: 12%;
   margin: 10px;
   border-radius: 50%;
+  transition: 0.6s ease-in-out;
 }
 
 .imagenProfesores,
@@ -37,12 +44,34 @@ section {
 .profesores div:hover,
 .alumnos div:hover {
   transform: scale(2.2);
-  background-color: white;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+}
+
+.alumnos div:hover p,
+.profesores div:hover p {
+  opacity: 70%;
 }
 
 .imagenProfesores p {
   font-size: 10px;
   text-align: center;
+}
+
+.profesores div p {
+  background-image: url("../../img/decorativaNegra.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.alumnos div p {
+  background-image: url("../../img/imageDecorativa.png");
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,42 +85,22 @@ section {
     flex-basis: auto;
   }
 }
-h1,
-h3 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+h2,
+h3,
+h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
 }
 
-.container h3,
-section h3 {
-  text-align: center;
-}
-
-.h1 {
-  background-image: url("../../img/cinta-removebg-preview.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 27px;
-  color: aliceblue;
-}
-
-.h3 {
-  background-image: url("../../img/cinta-removebg-preview.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 24px;
-  color: aliceblue;
-  width: 25%;
-}
-
-#h3 {
-  font-size: 18px;
+h2 {
+  font-size: 50px;
 }
 
 .decoracion {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   gap: 10px;
 }
 
