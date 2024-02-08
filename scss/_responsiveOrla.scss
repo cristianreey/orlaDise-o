@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+    .profesores,
+    .alumnos {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profesores,
+    .alumnos div {
+      flex-basis: auto;
+    }
+  }

@@ -1,159 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-body,
-h1,
-h2,
-p,
-img {
+body {
   margin: 0;
   padding: 0;
-  border: 0;
-}
-
-header {
-  background-color: #5b1ea3;
-  color: #fff;
   text-align: center;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px -2px 33px 0px rgba(0, 0, 0, 0.75);
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-header h1 {
-  font-size: 2em;
-}
-header h2 {
-  font-size: 1.5em;
-}
-header .logo {
-  max-width: 8%;
-  max-height: 95%;
-  position: absolute;
-  left: 2%;
-}
-header .logo-junta {
-  width: 20%;
-  position: absolute;
-  right: 2%;
+  color: rgb(0, 0, 0);
 }
 
-body {
-  font-family: "Salsa", cursive;
-  background-color: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
+section {
+  margin-top: 30px;
 }
 
-footer {
-  background-color: #5b1ea3;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-footer h2 {
-  font-size: 1.2em;
-}
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: 200px;
-}
-main section {
-  margin-bottom: 30px;
-}
-main .alumnos {
+.profesores,
+.alumnos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-main .alumnos div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0 55px 55px rgba(0, 0, 0, 0.1);
-  width: calc(17% - 40px);
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  transition: box-shadow 0.3s ease;
-  text-align: center;
 }
-main .alumnos div img {
-  width: 100%;
-  height: auto;
+
+.profesores {
+  gap: 20px;
 }
-main .alumnos div p {
-  font-weight: 600;
-  font-size: 18px;
+
+.alumnos div {
+  flex-basis: 12%;
+  margin: 10px;
 }
-main .profesores,
-main .direccion {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
+
+.imagenProfesores,
+.alumnos div img {
+  width: 100px;
+  height: 110px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
-main .profesores div .imagenProfesores,
-main .direccion div .imagenProfesores {
-  border: solid black;
-  border-radius: 50%;
-  width: 170px;
-  height: 200px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-main .profesores div .imagenProfesores:hover,
-main .direccion div .imagenProfesores:hover {
-  transform: scale(1.9);
+
+.profesores div:hover,
+.alumnos div:hover {
+  transform: scale(2.2);
   background-color: white;
 }
-main .profesores div img,
-main .direccion div img {
-  height: auto;
+
+.imagenProfesores p {
+  font-size: 10px;
+  text-align: center;
 }
-main .profesores .decoracion-lateral,
-main .direccion .decoracion-lateral {
+
+@media only screen and (max-width: 600px) {
+  .profesores,
+  .alumnos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profesores,
+  .alumnos div {
+    flex-basis: auto;
+  }
+}
+h1,
+h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container h3,
+section h3 {
+  text-align: center;
+}
+
+.h1 {
+  background-image: url("../../img/cinta-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 27px;
+  color: aliceblue;
+}
+
+.h3 {
+  background-image: url("../../img/cinta-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  color: aliceblue;
   width: 50%;
 }
-main .promocion {
+
+.decoracion {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-main .promocion .adorno2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-main .promocion div p {
-  font-size: 50px;
-  font-weight: 300;
-  font-style: italic;
-  color: rgb(135, 135, 135);
-}
-main .alumnado,
-main .directivo,
-main .profesorado {
-  font-size: 35px;
-  text-align: center;
-}
-main .alumnado p,
-main .directivo p,
-main .profesorado p {
-  font-weight: 300;
+
+.decoracion img {
+  height: 150px;
+  width: 300px;
 }
 
-* {
-  font-family: "Lato", sans-serif;
+.logos {
+  width: 150px;
+  height: auto;
 }

@@ -1,0 +1,26 @@
+h1,
+h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container h3,
+section h3 {
+  text-align: center;
+}
+
+.h1 {
+  background-image: url("../../img/cinta-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 27px;
+  color: aliceblue;
+}
+
+.h3 {
+  background-image: url("../../img/cinta-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  color: aliceblue;
+  width: 50%;
+}
