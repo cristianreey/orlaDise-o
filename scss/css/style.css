@@ -23,6 +23,7 @@ section {
 .alumnos div {
   flex-basis: 12%;
   margin: 10px;
+  border-radius: 50%;
 }
 
 .imagenProfesores,
@@ -79,7 +80,7 @@ section h3 {
   background-repeat: no-repeat;
   font-size: 24px;
   color: aliceblue;
-  width: 50%;
+  width: 25%;
 }
 
 #h3 {
@@ -91,6 +92,7 @@ section h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .decoracion img {
@@ -101,4 +103,14 @@ section h3 {
 .logos {
   width: 150px;
   height: auto;
+}
+
+.logos2 {
+  width: 250px !important;
+  height: 120px !important;
+}
+
+.logos3 {
+  width: 150px !important;
+  height: 75px !important;
 }
