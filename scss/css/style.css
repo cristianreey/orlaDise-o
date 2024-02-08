@@ -82,6 +82,10 @@ section h3 {
   width: 50%;
 }
 
+#h3 {
+  font-size: 18px;
+}
+
 .decoracion {
   display: flex;
   flex-direction: row;
